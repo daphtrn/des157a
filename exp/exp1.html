@@ -10,12 +10,28 @@
     <h2>To see what the code did with your comment, right click anywhere on the site and choose the "Inspect" option. Maybe sure you're on the "Console" tab.</h2>
 
     <script>
-        for (let i=0; i<101; i+=5) {
-                console.log(i);
-        }
+        var fizz = "";
+        var buzz = "";
 
-        for (let i=0; i<101; i+=3) {
+        for (let i=1; i<=100; i++) {
+            if (i % 3 == 0 && i % 5 == 0){
+                fizz = "FizzBuzz";
+                console.log(fizz);
+            }
+            else if (i % 3 == 0){
+                fizz = "Fizz";
+                console.log(fizz);
+            }
+            else if (i % 5 == 0){
+                buzz = "Buzz";
+                console.log(buzz);
+            }
+
+            else{
+                fizz="";
+                buzz="";
                 console.log(i);
+            }
         }
     </script>
 </body>
