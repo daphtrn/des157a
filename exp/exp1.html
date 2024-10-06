@@ -21,19 +21,22 @@
         for (var i=1; i<=100; i++) {
 
             /* If a number 1-100 is divded by 3 OR 5 and has a remainder of 0, then set the empty variable "fizz" to "FizzBuzz" and print "fizz" in the console */
-            if (i % 3 == 0 && i % 5 == 0){
+            if (i % 3 === 0 && i % 5 === 0){
                 fizz = "FizzBuzz";
+                buzz = "";
                 console.log(fizz);
             }
 
             /* If a number between 1-100 divided by ONLY 3 has a remainder of 0, then set the variable "fizz" to "Fizz" and print in console */
-            else if (i % 3 == 0){
+            else if (i % 3 === 0){
                 fizz = "Fizz";
+                buzz = "";
                 console.log(fizz);
             }
 
             /* If a number between 1-100 divided by ONLY 5 has a remainder of 0, then set the variable "buzz" to "Buzz" and print in console */
             else if (i % 5 == 0){
+                fizz = "";
                 buzz = "Buzz";
                 console.log(buzz);
             }
