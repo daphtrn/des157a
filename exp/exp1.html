@@ -10,23 +10,34 @@
     <h2>To see what the code did with your comment, right click anywhere on the site and choose the "Inspect" option. Maybe sure you're on the "Console" tab.</h2>
 
     <script>
+        /* I decided to try doing 4th experiement on the assignment page. Using console.log, a for loop, and variables, I've printed the numbers 1 to 100 except for numbers divisible by 3 and 5. Each is replaced with the word "Fizz" or "Buzz" repsectively, or "FizzBuzz" for numbers that are divisible by both. */
+
+        /* Set the variables "fizz" and "buzz" as empty so that they can be respectively set based on each condition in the "if" statements. */
         var fizz = "";
         var buzz = "";
 
+        /* For loop that begins at 1 and ends at 100, with increments of 1. */
         for (let i=1; i<=100; i++) {
+
+            /* If a number 1-100 is divded by 3 OR 5 and has a remainder of 0, then set the empty variable "fizz" to "FizzBuzz" and print "fizz" in the console */
             if (i % 3 == 0 && i % 5 == 0){
                 fizz = "FizzBuzz";
                 console.log(fizz);
             }
+
+            /* If a number between 1-100 divided by ONLY 3 has a remainder of 0, then set the variable "fizz" to "Fizz" and print in console */
             else if (i % 3 == 0){
                 fizz = "Fizz";
                 console.log(fizz);
             }
+
+            /* If a number between 1-100 divided by ONLY 5 has a remainder of 0, then set the variable "buzz" to "Buzz" and print in console */
             else if (i % 5 == 0){
                 buzz = "Buzz";
                 console.log(buzz);
             }
 
+            /* If a number between 1-100 isn't divisble by 3 or 5, then just print "i" */
             else{
                 fizz="";
                 buzz="";
