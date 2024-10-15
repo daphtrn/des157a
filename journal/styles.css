@@ -25,17 +25,20 @@ header img{
 
 main{
     display: block;
+    max-width: 550px;
+    margin-right: auto;
+    margin-top:40px;
     background-color: #9BAF7B;
     border-radius: 15px;
     border-width: 15px;
     border-style: solid;
     border-color: #4C5938;
-    color: #4C5938;
 }
 
 main p{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5em;
+    color: #F4F6F0;
 }
 
 main h2{
@@ -43,6 +46,13 @@ main h2{
     padding-top: 20px;
     font-size: 32px;
     font-weight: 600;
+    color: #4C5938;
+}
+
+date{
+    padding-left: 40px;
+    color: #4C5938;
+    font-weight: 500;
 }
 
 main article{
