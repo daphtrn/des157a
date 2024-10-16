@@ -16,6 +16,12 @@
 
     <script>
 
+        /* The page first prompts you to choose either a circle or triangle. Then it asks you to pick between red and blue.
+
+        Then I used "if" statements to check which options the user chose. Depending on what they chose, the code sets the particular image to be full opacity so that the user can see their selection. The images of each shape/color option are set to 0 opacity in the HTML above, so I used "getElementById" to change the opacity. 
+
+        If the user doesn't input one of the given shape/color options, the page will tell the user to refresh the page and read the instructions more carefully. I used "innerHTML" to change the comment if this happens. */
+
         function selection(){
             var userShape = prompt("Choose a shape (circle or triangle)!", "");
             var userColor = prompt("Choose a color (red or blue)!", "");
@@ -44,8 +50,6 @@
 
 
         selection();
-
-
         
     </script>
 </body>
