@@ -1,0 +1,78 @@
+body{
+    background-image: url("images/madlibs1.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    font-family: "Fredoka", "sans-serif";
+    color: #3F332D;
+}
+
+header{
+    text-align: center;
+    padding-right: 130px;
+    padding-top: 50px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 56px;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    display: flex;
+    flex: 1;
+    gap: 80px;
+    padding-right: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+form div{
+    max-width: 330px;
+}
+
+input{
+    width: 330px;
+    border: 0px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+label{
+    font-size: 18px;
+}
+
+input[type="text"]{
+    background-color: #F4F6F0;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    outline: 0px;
+    background-color: #EDFAD3;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    font-family: "Fredoka", "sans-serif";
+    margin-top: 38px;
+    background-color: #F4D272;
+}
+
+input[type="submit"]:hover{
+    background-color: #F3CA5B;
+}
+
+#overlay img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
