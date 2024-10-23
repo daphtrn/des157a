@@ -24,12 +24,25 @@ header img{
     padding-top: 50px;
 }
 
-main{
+#oneANDtwo{
     display: flex;
     flex: 1;
+    gap: 32px;
 }
 
 #one{
+    display: block;
+    max-width: 550px;
+    margin-right: auto;
+    margin-top:40px;
+    background-color: #9BAF7B;
+    border-radius: 15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #4C5938;
+}
+
+#two{
     display: block;
     max-width: 550px;
     margin-left: auto;
@@ -41,7 +54,7 @@ main{
     border-color: #4C5938;
 }
 
-#two{
+#three{
     display: block;
     max-width: 550px;
     margin-right: auto;
