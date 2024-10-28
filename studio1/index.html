@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="path/to/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 
@@ -24,36 +24,36 @@
 
     <main>
 
-        <form>
+        <form id="myForm">
 
             <div>
                 <label for="verbING">Verb ending in "ing"</label>
                 <input type="text" id="verbING" required>
 
-                <label for="verbING">Adjective</label>
+                <label for="adj1">Adjective</label>
                 <input type="text" id="adj1" required>
 
-                <label for="verbING">Verb (past tense)</label>
+                <label for="verbPAST">Verb (past tense)</label>
                 <input type="text" id="verbPAST" required>
 
-                <label for="verbING">Adjective</label>
+                <label for="adj2">Adjective</label>
                 <input type="text" id="adj2" required>
 
-                <label for="verbING">Verb</label>
+                <label for="verb1">Verb</label>
                 <input type="text" id="verb1" required>
             </div>
 
             <div>
-                <label for="verbING">Number</label>
+                <label for="number">Number</label>
                 <input type="text" id="number" required>
 
-                <label for="verbING">Noun</label>
+                <label for="noun">Noun</label>
                 <input type="text" id="noun" required>
 
-                <label for="verbING">Verb</label>
+                <label for="verb2">Verb</label>
                 <input type="text" id="verb2" required>
 
-                <label for="verbING">Body part</label>
+                <label for="bodypart">Body part</label>
                 <input type="text" id="bodypart" required>
 
                 <input type="submit">
@@ -61,10 +61,11 @@
 
         </form>
 
-        <!-- <section id="overlay" class="hidden">
-            <img src="images/madlibs2.png">
-            <button class="refresh">Refresh</button>
-        </section> -->
+        <section id="overlay" class="hidden">
+            <img src="images/madlibs2.png" alt="overlay box">
+        </section>
+
+        <article id="madlib"></article>
 
     </main>
 </body>
