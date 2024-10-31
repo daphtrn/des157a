@@ -30,6 +30,12 @@ header img{
     gap: 32px;
 }
 
+#threeANDfour{
+    display: flex;
+    flex: 1;
+    gap: 32px;
+}
+
 #one{
     display: block;
     max-width: 550px;
@@ -55,6 +61,18 @@ header img{
 }
 
 #three{
+    display: block;
+    max-width: 550px;
+    margin-left: auto;
+    margin-top:40px;
+    background-color: #9BAF7B;
+    border-radius: 15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #4C5938;
+}
+
+#four{
     display: block;
     max-width: 550px;
     margin-right: auto;
@@ -90,4 +108,16 @@ main article{
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 20px;
+}
+
+#four img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #F4F6F0;
+}
+
+.part{
+    font-weight: 600;
+    font-size: 24px;
 }
