@@ -24,13 +24,7 @@ header img{
     padding-top: 50px;
 }
 
-#oneANDtwo{
-    display: flex;
-    flex: 1;
-    gap: 32px;
-}
-
-#threeANDfour{
+#oneANDtwo, #threeANDfour, #fiveANDsix{
     display: flex;
     flex: 1;
     gap: 32px;
@@ -73,6 +67,18 @@ header img{
 }
 
 #four{
+    display: block;
+    max-width: 550px;
+    margin-right: auto;
+    margin-top:40px;
+    background-color: #9BAF7B;
+    border-radius: 15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #4C5938;
+}
+
+#five{
     display: block;
     max-width: 550px;
     margin-right: auto;
