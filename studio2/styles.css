@@ -2,20 +2,34 @@ body{
     background-image: url(images/IMG_0634.JPG);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    font-family: "Sour Gummy", "sans-serif";
+    color: #1a3a4a;
 }
 
+
 img{
+    object-fit: cover;
     display: block;
     width: 25vw;
     height: auto;
-    margin-right: auto;
+    margin-bottom: 48px;
+    -webkit-box-shadow: 4px 10px 20px -9px rgba(26,58,74,1);
+    -moz-box-shadow: 4px 10px 20px -9px rgba(26,58,74,1);
+    box-shadow: 4px 10px 20px -9px rgba(26,58,74,1);
+}
+
+img:hover{
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 #hoverDiv{
     opacity: 0%;
     position: absolute;
     display: block;
-    background-color: #F4D272;
+    background-color: #ffd269;
     width: 750px;
     height: 630px;
     left: 20%;
@@ -26,7 +40,7 @@ img{
     opacity: 20%;
 }
 
-/* .hidden{
+.hidden{
     visibility: hidden;
     opacity: 0;
 }
@@ -34,23 +48,25 @@ img{
 .showing{
     visibility: visible;
     opacity: 1;
-} */
+}
 
 #overlay{
-    position: absolute;
+    position: fixed;
     background-color: rgba(0,0,0,0.5);
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     transition-property: opacity, visibility;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-timing-function: ease;
 }
 
 #overlay article{
+    position: relative;
+    overflow-y: auto;
     box-sizing: border-box;
-    background-color:#fff;
+    background-color: #d5e7f0;
     padding-top:20px;
     padding-right: 50px;
     padding-left: 50px;
@@ -60,4 +76,62 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 48px;
+    color: #1a3a4a;
+}
+
+.imgANDdesc{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    gap: 50px;
+}
+
+.imgANDdesc p{
+    font-size: 24px;
+}
+
+.imgCaption{
+    z-index: -1;
+    position: absolute;
+    display:block;
+    background-color:#ffd269;
+    width: 25vw;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.imgCaption p{
+    font-size: 24px;
+    text-align: center;
+    color: #291e04;
+    padding: 30px 50px 30px 50px;
+}
+
+.imgANDdesc:hover .imgCaption{
+    opacity: 1;
+}
+
+button{
+    background-color: #ffd269;
+    border: none;
+    color: #291e04;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-radius: 60px;
+    font-weight: 600;
+    border: 5px solid #f0c04f;
+}
+
+button:hover{
+    background-color: #f0c04f;
 }

@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+    
     <script src="script.js" defer></script>
     <title>Studio 2: Every Image Project</title>
 </head>
 <body>
     <main>
-        <div id="hoverDiv"></div>
+        <div>
+            <a href="#" id="hoverDiv" class="open"></a>
+        </div>
     </main>
 
     <section id="overlay" class="hidden">
@@ -18,12 +26,47 @@
             <h2>My Brother and I</h2>
 
             <div>
-                <img src="images/IMG_1727.JPG" alt="Justin posed">
-                <img src="images/IMG_2022.JPG" alt="Justin swimming">
-                <img src="images/IMG_3027.JPG" alt="Justin and balloons">
-                <img src="images/IMG_3534.JPG" alt="Justin and turkey leg">
-                <img src="images/IMG_4662.JPG" alt="Justin with a mask">
-            </div>
+                <section class="imgANDdesc">
+                    <img src="images/IMG_1727.JPG" alt="Justin posed">
+                    <div class="imgCaption">
+                        <p>Justin posed with his mannequin bestie.</p>
+                    </div>
+                    <p>My little brother, Justin, and I have always been very close. However, we have a nontraditional sibling relationship</p>
+                </section>
+
+                <section class="imgANDdesc">
+                    <img src="images/IMG_2022.JPG" alt="Justin swimming">
+                    <div class="imgCaption">
+                        <p>Justin doing his most favorite acvitity ever, swimming.</p>
+                    </div>
+                    <p>Justin loves looking through pictures. He especially loves looking through photos of him doing the things he loves, or doing something he finds funny.</p>
+                </section>
+
+                <section class="imgANDdesc">
+                    <img src="images/IMG_3027.JPG" alt="Justin and balloons">
+                    <div class="imgCaption">
+                        <p>He loves birthday parties!</p>
+                    </div>
+                    <p>However, he can sometimes be embarrassed to share these interests with others. He also has very limited verbal communication skills, which also makes it hard to share.</p>
+                </section>
+
+                <section class="imgANDdesc">
+                    <img src="images/IMG_3534.JPG" alt="Justin and turkey leg">
+                    <div class="imgCaption">
+                        <p>A whole turkey leg to himself (this boy loves eating meat).</p>
+                    </div>
+                    <p>Justin always asks me to take pictures of him, and my camera roll is filled with photos like these.</p>
+                </section>
+
+                <section class="imgANDdesc">
+                    <img src="images/IMG_4662.JPG" alt="Justin with a mask">
+                    <div class="imgCaption">
+                        <p>Scary mask!</p>
+                    </div>
+                    <p>With his limited verbal skills, I feel that him asking me to take these photos is his way of sharing his interests with me. I always feel very lucky that he's comfortable enough to do so.<br>
+                    Even when I'm away at school, I'm always reminded of home</p>
+                </section>
+            </div>  
 
             <button class="close">Close</button>
         </article>
