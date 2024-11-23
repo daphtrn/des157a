@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+
     <script src="script.js" defer></script>
 
     <title>Studio 3: Game On</title>
@@ -14,34 +18,45 @@
 
 <body>
     <header>
-        <h1>Game of Pig</h1>
-        <p>?</p>
+        <h1>Game of PIG <a href="#" class="open">?</a></h1>
     </header>
 
-    <section>
-        <div>
+    <section id="playArea">
+        <div class="players">
             <h2>Player 1</h2>
-            <img src="images/pig1.png" alt="pig character selector">
-            <p>Score</p>
-            <p>0</p>
-        </div>
-            
-        <div>
-            <h2>Turn #1</h2>
-            <div>
-                <img src="images/die1.png">
-                <img src="images/die1.png">
-            </div>
-            <p>+ 0</p>
-            <p>ROLL</p>
+            <img src="images/pig2.png">
+            <p class="scoreTitle">Score</p>
+            <p class="score" id="score1">0</p>
         </div>
 
-        <div>
-            <h2>Player 2</h2>
-            <img src="images/pig1.png" alt="pig character selector">
-            <p>Score</p>
-            <p>0</p>
+        <div id="middleSection">
+            <div id="dieArea">
+                <div id="game"></div>
+                <div id="actions"></div>
+            </div>
+
+            <div id="gamecontrol">
+                <h2>Start!</h2>
+                <button id="startgame">Randomize who will go first</button>
+            </div>
         </div>
+
+        <div class="players">
+            <h2>Player 2</h2>
+            <img src="images/pig3.png">
+            <p class="scoreTitle">Score</p>
+            <p class="score" id="score2">0</p>
+        </div>
+    </section>
+
+    <section id="overlay" class="hidden">
+        <article>
+            <h2>Instructions</h2>
+            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+            <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+            <button class="close">close</button>
+        </article>
     </section>
 </body>
 </html>
+    
