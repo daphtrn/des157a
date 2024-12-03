@@ -19,6 +19,10 @@ header h1{
     color: #4C5938;
 }
 
+#processTitle{
+    font-size: 42px;
+}
+
 header img{
     padding: 40px;
     padding-top: 50px;
