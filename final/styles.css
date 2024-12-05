@@ -28,7 +28,7 @@ header img{
     padding-top: 50px;
 }
 
-#brief{
+#brief, #report{
     display: block;
     margin-top:40px;
     background-color: #9BAF7B;
@@ -44,6 +44,12 @@ main p{
     color: #F4F6F0;
 }
 
+#report p, main li{
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #F4F6F0;
+}
+
 main h2{
     padding-top: 20px;
     font-size: 28px;
@@ -55,4 +61,11 @@ main article{
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 20px;
+}
+
+#reportImage{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 15px;
 }
